@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     //==================================================
     
     // Outlets
-    @IBOutlet weak var greetingLabel: UILabel!
+    
     
     //==================================================
     // MARK: - _View Lifecycle
@@ -24,15 +24,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureGreetingLabel()
+        
     }
 
     //==================================================
     // MARK: - Functions
     //==================================================
     
-    private func configureGreetingLabel() {
-        greetingLabel.text = "Hello Jeff"
-    }
+    
 }
 
