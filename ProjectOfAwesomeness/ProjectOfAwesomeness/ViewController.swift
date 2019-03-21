@@ -9,12 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //==================================================
+    // MARK: - _Properties
+    //==================================================
+    
+    // Outlets
+    @IBOutlet weak var greetingLabel: UILabel!
+    
+    //==================================================
+    // MARK: - _View Lifecycle
+    //==================================================
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        configureGreetingLabel()
     }
 
-
+    //==================================================
+    // MARK: - Functions
+    //==================================================
+    
+    private func configureGreetingLabel() {
+        greetingLabel.text = "Hello Jeff"
+    }
 }
 
