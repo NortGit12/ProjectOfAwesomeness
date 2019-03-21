@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     //==================================================
     
     private func configureGreetingLabel() {
-        greetingLabel.text = "Hello Ben"
+        greetingLabel.text = "Hello Ben."
     }
 }
 
