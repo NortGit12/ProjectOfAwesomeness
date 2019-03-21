@@ -25,14 +25,27 @@
                                     <constraint firstAttribute="height" constant="198" id="rDN-FO-fDh"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greeting Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHb-u9-wsy">
+                                <rect key="frame" x="12" y="320" width="351" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="BHb-u9-wsy" firstAttribute="top" secondItem="KId-aU-lDw" secondAttribute="bottom" constant="32" id="0az-cA-8KD"/>
+                            <constraint firstItem="BHb-u9-wsy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6xb-NZ-Ww8"/>
                             <constraint firstItem="KId-aU-lDw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KYm-EX-e6Z"/>
+                            <constraint firstItem="BHb-u9-wsy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="dKM-cb-V1D"/>
                             <constraint firstItem="KId-aU-lDw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="lHb-z5-3Fz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BHb-u9-wsy" secondAttribute="trailing" constant="12" id="stR-Wc-N6r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="BHb-u9-wsy" id="ioz-sX-lt6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
